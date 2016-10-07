@@ -1,7 +1,7 @@
-<Query Kind="Statements" />
+﻿<Query Kind="Statements" />
 
 bool A, B, C, D;
-int año = 2016;
+int año = 2017;
 
 A = año % 4 == 0;
 B = año % 100 == 0;
