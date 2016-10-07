@@ -1,5 +1,4 @@
-string quijote = @"
-En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de 
+﻿string quijote = @"En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de 
 los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que 
 carnero, salpicón las más noches, duelos y quebrantos los sábados, lentejas los viernes, algún palomino 
 de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de 
@@ -50,3 +49,4 @@ la Tierra, entre los brazos. Decía mucho bien del gigante Morgante, porque con 
 son soberbios y descomedidos, él solo era afable y bien criado; pero sobre todos estaba bien con Reinaldos de Montalbán, y más 
 cuando le veía salir de su castillo y robar cuantos topaba, y cuando en Allende robó aquel ídolo de Mahoma, que era todo de oro, 
 según dice su historia. Diera él, por dar una mano de coces al traidor de Galalón, al ama que tenía y aun a su sobrina de añadidura. ";
+
