@@ -1,4 +1,7 @@
-﻿string quijote = @"En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de 
+<Query Kind="Program" />
+
+
+string quijote = @"En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de 
 los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que 
 carnero, salpicón las más noches, duelos y quebrantos los sábados, lentejas los viernes, algún palomino 
 de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de 
@@ -50,3 +53,47 @@ son soberbios y descomedidos, él solo era afable y bien criado; pero sobre todo
 cuando le veía salir de su castillo y robar cuantos topaba, y cuando en Allende robó aquel ídolo de Mahoma, que era todo de oro, 
 según dice su historia. Diera él, por dar una mano de coces al traidor de Galalón, al ama que tenía y aun a su sobrina de añadidura. ";
 
+List<string> diccionario;
+List<int> frecuencias;
+
+void Main()
+{
+	string[] palabras;
+	char[] separadores;
+	
+
+	separadores = new char[] {' ', ',', ';', ':', '\n', '\r', '.', '(', ')'};
+	
+	palabras = quijote.Split(separadores, StringSplitOptions.RemoveEmptyEntries);
+	//  palabras.Dump();
+	
+	//	crear dos listas, una para las palabras (sin repetir) y otra para guardar la cantidad
+	//	de veces que aparecen en el texto
+	
+	diccionario = new List<string>();
+	frecuencias = new List<int>();
+	
+	//	para cada palabra del array palabras...
+	//		buscar en diccionario
+	//		si existe, obtener el indice donde se encuentra, incrementar el mismo indice
+	//			pero de la lista de frecuencias
+	//		si no existe, agregar la palabra en la lista de palabras
+	//					  agregar el valor 1 en la lista de frecuencias (esta sincronizada)
+	foreach (string palabra in palabras)
+	{
+		string palabraDicc = palabra.ToLower();
+		
+		if (diccionario.Contains(palabraDicc))
+		{
+			int indice = diccionario.IndexOf(palabraDicc);
+			frecuencias[indice]++;
+		}
+		else
+		{
+			diccionario.Add(palabraDicc);
+			frecuencias.Add(1);
+		}
+	}
+	for (int idx = 0; idx < frecuencias.Count; idx++)
+		Console.WriteLine($"{diccionario[idx],-20} {frecuencias[idx]}");
+}
