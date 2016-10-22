@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arreglos_Listas", "Arreglos_Listas\Arreglos_Listas.csproj", "{4182207D-FEE2-4891-8BD2-EA8A86752AF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{BACA759F-2D5E-41CA-9B57-BA76A18FF88B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4182207D-FEE2-4891-8BD2-EA8A86752AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4182207D-FEE2-4891-8BD2-EA8A86752AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4182207D-FEE2-4891-8BD2-EA8A86752AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BACA759F-2D5E-41CA-9B57-BA76A18FF88B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BACA759F-2D5E-41CA-9B57-BA76A18FF88B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BACA759F-2D5E-41CA-9B57-BA76A18FF88B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BACA759F-2D5E-41CA-9B57-BA76A18FF88B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
