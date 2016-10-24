@@ -7,6 +7,17 @@ using System.Threading.Tasks;
 
 namespace Arreglos_Listas
 {
+  class Informacion
+  {
+    //  feature C#
+    //
+    public string Nombre { get; set; } = "Hola!!!";
+
+    //  feature C# 6
+    //
+    public void Metodo() => Console.WriteLine("Informacion...");
+
+  }
   class Program
   {
     static void Main(string[] args)
@@ -45,7 +56,7 @@ namespace Arreglos_Listas
     {
       int indice = 0;
       int padding = (int)Math.Ceiling(Math.Log10(lista.Count));
-      string formato = $"{{0:D{padding}}} --> {{1}}";
+      string formato = $"{{0:D{padding}}} --> {{1}}";   //  feature de C# 6
 
       foreach (T item in lista)
         Console.WriteLine(formato, indice++, item);

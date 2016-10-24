@@ -10,6 +10,7 @@ public class Usuario
 	
 	//	si queremos que TODOS los usuarios que se creen tengan un mismo valor inicial
 	//	de IntentosErroneos...tengo que hacerlo en el ctor de Usuario
+  //
 	//public Usuario()
 	//{
 	//	IntentosErroneos = 4;
@@ -66,11 +67,11 @@ public class Seguridad
 	public Seguridad()
 	{
 		Usuarios = new List<Usuario>() {
-	  		new Usuario() { Login = "hsimpson", Password = "12345" },
-	  		new Usuario() { Login = "mburns", Password = "12345" },
-	  		new Usuario() { Login = "msimpson", Password = "12345" },
-	  		new Usuario() { Login = "mbouvier", Password = "12345" },
-	  		new Usuario() { Login = "nflanders", Password = "12345" },
+	  	new Usuario() { Login = "hsimpson", Password = "12345" },
+	  	new Usuario() { Login = "mburns", Password = "12345" },
+	  	new Usuario() { Login = "msimpson", Password = "12345" },
+	  	new Usuario() { Login = "mbouvier", Password = "12345" },
+	  	new Usuario() { Login = "nflanders", Password = "12345" },
 			new Usuario() { Login = "bsimpson", Password = "123456", IntentosErroneos = 3 }
 		};
 	}
